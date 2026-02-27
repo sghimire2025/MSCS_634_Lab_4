@@ -175,25 +175,5 @@ Open `MSCS_634_Lab_4.ipynb` and run the cells in order.
 
 ---
 
-## Notes
-- The Diabetes dataset used in scikit-learn is already preprocessed/scaled, but standardization was still applied for Ridge/Lasso as part of best practice for regularization.
-- Some plot cells in the notebook include `plt.savefig(...)` to automatically save screenshots into the `images/` folder.
-- If an image is not available yet, keep the placeholder and add the screenshot later before submission.
 
----
 
-## How to Save Plot Images in Notebook (Reminder)
-Use this pattern before `plt.show()`:
-
-```python
-plt.tight_layout()
-plt.savefig("images/your_plot_name.png", dpi=300, bbox_inches="tight")
-plt.show()
-```
-
-Create the folder once near the top of the notebook:
-
-```python
-import os
-os.makedirs("images", exist_ok=True)
-```
